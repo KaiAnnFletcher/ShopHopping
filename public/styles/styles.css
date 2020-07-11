@@ -115,11 +115,12 @@ width:135px;
  margin-left: 30px;
 }
 
-.map {
-  position: static fixed;
+/* #map {
+  /*position: static fixed;
+  position: absolute;
   z-index: 0;
   bottom: 0px;
-}
+} */
 
 .pin1, .pin2 {
   position: absolute;
@@ -132,7 +133,7 @@ width:135px;
   z-index: 0;
   overflow-y: scroll;
   height: 980px;
-  margin-left: 20px;
+  margin-left: 50px;
   border: 1px solid black;
 }
 
@@ -144,6 +145,31 @@ padding-right: 0px;
 .search1:hover{
   cursor: pointer;
 }
+
+.img {
+  position:absolute;
+  z-index:1
+}
+
+#container {
+  /* position: relative; */
+    display:inline-block;
+    width:1000px; 
+    height:1000px;
+    /*margin-top: 1070px;*/
+    /*margin-left: 600px;*/ 
+    background: black; 
+    position:relative; 
+    border:5px solid black; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 50px #333
+}
+
+#myCanvas {
+  position:relative;
+  z-index:20;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

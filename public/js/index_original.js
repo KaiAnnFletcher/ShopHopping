@@ -5,24 +5,24 @@ var $exampleText = $("#searchInput");
 //var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submitInput");
 var $exampleList = $("#example-list");
-var $mapdivcoordinates = $("#map");
+var $mapdivcordinates = $(".map");
 var $items = $(".items");
 var categoryPoint = { "infants&toddler":
-  {"x":"664px", "y":"367px"},
+  {"x":"669px", "y":"329px"},
 "shoes":
-  {"x":"536px", "y":"359px"}, 
+  {"x":"542px", "y":"329px"}, 
 "electronics":
-  {"x":"395px", "y":"355px"}, 
+  {"x":"400px", "y":"329px"}, 
 "photocentre":
-  {"x":"294px", "y":"345px"},
+  {"x":"300px", "y":"329px"},
 "paint":
-  {"x":"254px", "y":"350px"},
+  {"x":"264px", "y":"329px"},
 "hardware":
-  {"x":"208px", "y":"346px"},
+  {"x":"215px", "y":"329px"},
 "automotive":
-  {"x":"154px", "y":"345px"},
+  {"x":"160px", "y":"329px"},
 "washroomtop":
-  {"x":"235px", "y":"287px"},
+  {"x":"240px", "y":"260px"},
 "washroombottom":
   {"x":"586px", "y":"737px"},
 "gardencenterleft":
@@ -129,21 +129,12 @@ var categoryPoint = { "infants&toddler":
   {"x":"678px", "y":"464px"}                   
 };
 
-// //TO GET MAP COORDINATES///
+////TO GET MAP COORDINATES///
 // $mapdivcordinates.on("click",function(event){
 //   console.log("X = "+event.originalEvent.offsetX +" Y = "+event.originalEvent.offsetY);
   
 // });
-// //TO GET MAP COORDINATES///
-//Alternative to get map coordinates
-// $(document).ready(function() {
-//   $('img').click(function(e) {
-//     var offset = $(this).offset();
-//     console.log((e.pageX - offset.left));
-//     console.log((e.pageY - offset.top));
-//   });
-// });
-
+////TO GET MAP COORDINATES///
 
 function searchWalmart(search) {
   $items.empty();
